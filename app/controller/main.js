@@ -1,6 +1,6 @@
-var app = module.parent.exports;
-
 module.exports = function (options) {
+
+  var app = options.app;
 
   app.get('/', function(req, res){
     res.render('index', { title: 'Express' });

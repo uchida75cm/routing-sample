@@ -26,7 +26,7 @@ app.configure('development', function(){
 });
 
 app.hogehoge = 'aaaaaa';
-require('./app/controller/main')({ piyo : 'piyopiyo' });
+require('./app/controller/main')({ app : app, piyo : 'piyopiyo' });
 
 http.createServer(app).listen(app.get('port'), function(){
   console.log("Express server listening on port " + app.get('port'));
